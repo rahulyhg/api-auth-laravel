@@ -27,8 +27,7 @@ class LoginController extends Controller
     		'password' => 'required'
 		]);
 		
-        return $this->issueToken($request, 'password');
-
+		return $this->issueToken($request, 'password');
     }
 
     public function refresh(Request $request){
